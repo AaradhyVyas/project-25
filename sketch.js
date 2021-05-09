@@ -1,3 +1,4 @@
+
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
@@ -25,7 +26,11 @@ function setup() {
 
 	paperObject = new Paper(150,650,40,40);
 
+	var render = Render.create({ element: document.body, engine: engine, options: { width: 1600, height: 700, wireframes: false } }); 
+
 	Engine.run(engine);
+
+	Render.run(render);
   
 }
 
