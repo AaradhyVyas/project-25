@@ -6,6 +6,7 @@ class Paper{
         'restitution':0.3,
         'friction':0,
         'density':1.2
+	 isStatic:false
     }
 
 		this.x=x;
@@ -24,7 +25,7 @@ class Paper{
 			imageMode(CENTER);
            image(this.image, 0, 0, this.width, this.height);
 		   this.image.scale = 0.02
-            ellipse(0,0,this.r,this.r);
+            
 			pop()
 	}
 
